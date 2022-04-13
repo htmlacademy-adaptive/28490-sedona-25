@@ -1,0 +1,25 @@
+.main-navigation__list {
+
+}
+
+.main-navigation__toggle {
+  background-image: url("../img/icon-menu.svg");
+  height: 22px;
+  width: 22.9px;
+  border: transparent;
+  background-color: #ffffff;
+}
+
+.main-navigation__item {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-navigation__item--current {
+  color: #766357;
+}

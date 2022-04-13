@@ -1,0 +1,90 @@
+.advantages__list {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.advantages__item {
+  font-family: 'PT Sans';
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages__wrapper--true-town,
+.advantages__wrapper--divils-bridge {
+  color: #ffffff;
+  background-color: #81b3d2;
+  width: 320px;
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 54px 22px 0 16px;
+}
+
+.advantages__description,
+.advantages__number {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+
+}
+
+.advantages__description {
+  padding: 17px 22px 40px 16px;
+}
+
+.advantages__number {
+  padding: 11px 22px 0 16px;
+}
+
+.advantages__wrapper {
+  background-color: #eeeeee;
+  padding: 35px 16px 19.5px;
+}
+
+.advantages__other {
+  padding: 0;
+}
+
+.advantages__other-wrapper {
+  background-color: #eeeeee;
+  text-align: left;
+  padding-left: 65px;
+}
+
+.advantages__other-title {
+  padding-top: 30px;
+  padding-left: 8px;
+}
+
+.advantages__other-description {
+  padding-left: 8px;
+}
+
+.advantages__other-wrapper--motel {
+  background: left no-repeat url(../img/icon-house.svg);
+  background-position-x: 18px;
+  background-position-y: 25px;
+}
+
+.advantages__other-wrapper--food {
+  background: left no-repeat url(../img/icon-burger.svg);
+  background-position-x: 18px;
+  background-position-y: 25px;
+}
+
+.advantages__other-wrapper--souvenir {
+  background: left no-repeat url(../img/icon-gift.svg);
+  background-position-x: 18px;
+  background-position-y: 25px;
+}
+
+.advantages__divider-line {
+  width: 284px;
+  height: 1px;
+  background: #D6D6D6;
+  margin-left: 18px;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__logo">
+      <img src="img/logo.svg" alt="Logo" width="185" height="96">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item main-navigation__item--current">
+          <a>Главная</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#">HTML academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container-form">
+    <section class="welcome-block-form">
+      <div class="welcome-block-form__image">
+        <img alt="Welcome" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
+      </div>
+      <div class="welcome-block-form__description">
+        <h2 class="welcome-block-form__title">Оставьте свой отзыв</h2>
+        <p class="welcome-block-form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях</p>
+      </div>
+    </section>
+    <section class="form-input">
+      <div class="form-input__input-names names-field">
+        <h2 class="names-field__title">Представьтесь:</h2>
+        <form class="names-field__field form">
+          <div class="names-field__field-group">
+            <label class="form__name">имя*:</label>
+            <input class="form__input" type="text" placeholder="Пётр">
+          </div>
+          <div class="names-field__field-group">
+            <label class="form__name">фамилия*:</label>
+            <input class="form__input" type="text" placeholder="Пустота">
+          </div>
+          <div class="names-field__field-group">
+            <label class="form__name">отчество*:</label>
+            <input class="form__input" type="text" placeholder="Викторович">
+          </div>
+        </form>
+      </div>
+      <div class="input-contacts">
+        <h2 class="input-contacts__title">Контактная информация:</h2>
+        <form class="input-contacts__field form">
+          <div class="input-contacts__field-group">
+            <label class="form__contacts">контактный телефон*:</label>
+            <input class="form__input contact-input" type="tel" placeholder="Введите телефон">
+          </div>
+          <div class="input-contacts__field-group">
+            <label class="form__name">электронная почта*:</label>
+            <input class="form__input contact-input" type="email" placeholder="Введите e-mail">
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="about-visit">
+      <div class="about-visit__general-impression">
+        <fieldset class="about-visit__impression-checkbox">
+          <legend class="about-visit__title">Ваше общее впечатление:</legend>
+          <ul class="about-visit__list list-reset">
+            <li class="about-visit__item">
+              <input class="control-input" type="radio" value="hotel" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Скорее положительное</span>
+            </li>
+            <li class="about-visit__item">
+              <input class="control-input" type="radio" value="hotel">
+              <span class="control-mark"></span>
+              <span class="control-label">Скорее отрицательное</span>
+            </li>
+            <li class="about-visit__item">
+              <input class="control-input" type="radio" value="hotel">
+              <span class="control-mark"></span>
+              <span class="control-label">Затрудняюсь ответить</span>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="about-visit__visited-places" <fieldset class="about-visit__visited-places-checkbox">
+        <legend class="about-visit__title">посещенные достопримечательности:</legend>
+        <ul class="about-visit__list list-reset">
+          <li class="about-visit__item">
+            <input class="control-input" type="checkbox" value="hotel" checked>
+            <span class="control-mark"></span>
+            <span class="control-label">Мост Дьявола</span>
+          </li>
+          <li class="about-visit__item">
+            <input class="control-input" type="checkbox" value="hotel" checked>
+            <span class="control-mark"></span>
+            <span class="control-label">Гора-Колокол</span>
+          </li>
+          <li class="about-visit__item">
+            <input class="control-input" type="checkbox" value="hotel" checked>
+            <span class="control-mark"></span>
+            <span class="control-label">Слайд-парк</span>
+          </li>
+          <li class="about-visit__item">
+            <input class="control-input" type="checkbox" value="hotel">
+            <span class="control-mark"></span>
+            <span class="control-label">Красные скалы</span>
+          </li>
+        </ul>
+        </fieldset>
+      </div>
+      <div class="about-visit__description">
+        <label class="about-visit__title">Опишите свои эмоции:</label>
+        <input class="about-visit__input" type="text" placeholder="Опишите подробно все свои восторги">
+      </div>
+      <button class="about-visit__button button">Отправить отзыв</button>
+      <span class="about-visit__note">* — обязательные поля</span>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <a class="main-footer__tag" href="#">#visitsedona</a>
+    <ul class="main-footer__networks networks list-reset">
+      <li class="networks__item">
+        <a class="networks__link" href="#">
+          <svg width="24" height="14" viewBox="0 0 24 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M23.4 1c.2-.6 0-1-.7-1H20c-.6 0-1 .3-1.1.7 0 0-1.3 3.2-3.2 5.3-.7.6-1 .8-1.3.8-.1 0-.4-.2-.4-.7V.9c0-.6-.2-.9-.7-.9H9.2c-.5 0-.7.3-.7.6 0 .6 1 .8 1 2.5V7c0 .8-.1 1-.5 1-.9 0-3-3.2-4.3-6.9-.3-.7-.5-1-1.2-1H1C.1 0 0 .3 0 .7c0 .7.9 4.1 4.1 8.6 2.2 3 5.3 4.7 8 4.7 1.7 0 2-.4 2-1v-2.3c0-.8 0-.9.6-.9.4 0 1 .2 2.6 1.7 1.8 1.7 2.1 2.5 3.1 2.5H23c.8 0 1.2-.4 1-1.1-.3-.7-1.1-1.8-2.3-3L20 8c-.4-.5-.3-.7 0-1.1 0 0 3.2-4.4 3.5-6Z" />
+          </svg>
+        </a>
+      </li>
+      <li class="networks__item">
+        <a class="networks__link" href="#">
+          <svg width="22" height="18" viewBox="0 0 22 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m21.4 1.6-3.1 15c-.3 1-.9 1.3-1.8.8l-4.8-3.6-2.3 2.3c-.3.2-.5.4-1 .4l.3-4.9 9-8c.4-.4-.1-.6-.6-.3l-11 7-4.8-1.5c-1-.3-1-1 .2-1.5L20 0c.9-.3 1.6.2 1.3 1.5Z" />
+          </svg>
+        </a>
+      </li>
+      <li class="networks__item">
+        <a class="networks__link networks__link--youtube" href="#">
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="main-footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <section class="modal" <div class="modal__failure failure">
+    <h2 class="failure__title">Что-то пошло не так</h2>
+    <p class="failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="failure__button">ок</button>
+    </div>
+    <div class="modal__success success">
+      <h2 class="success__title">Что-то пошло не так</h2>
+      <p class="success__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="success__button">ок</button>
+    </div>
+</body>
