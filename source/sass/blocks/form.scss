@@ -1,0 +1,38 @@
+fieldset {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  border: none;
+}
+
+.form__contact-list {
+  padding: 0;
+}
+
+.form__fieldset-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.form__contact-label {
+  text-transform: uppercase;
+}
+
+.form__contact-input {
+  width: 280px;
+  height: 26px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 16px;
+  margin-bottom: 16px;
+  border: none;
+  background-color: #F2F2F2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
