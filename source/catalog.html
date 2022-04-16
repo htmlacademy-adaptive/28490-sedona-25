@@ -5,84 +5,110 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <a class="header__logo">
+    <a class="header__logo" href="index.html">
       <img src="img/logo.svg" alt="Logo" width="185" height="96">
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-navigation__list">
-        <li class="main-navigation__item main-navigation__item--current">
-          <a>Главная</a>
-        </li>
         <li class="main-navigation__item">
-          <a href="catalog.html">Фото и видео</a>
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-navigation__item main-navigation__item--current">
+          <a>Фото и видео</a>
         </li>
         <li class="main-navigation__item">
           <a href="form.html">Форма отзыва</a>
         </li>
         <li class="main-navigation__item">
-          <a href="#">HTML academy</a>
+          <a href="https://htmlacademy.ru">HTML academy</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main-container-inner">
-    <section class="welcome-block-catalog">
-      <div class="welcome-block-catalog__image">
-        <img alt="Welcome" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
+  <main class="main-container">
+    <section class="welcome-block welcome-block--page">
+      <div class="welcome-block__image">
+        <img src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
       </div>
-      <div class="welcome-block-catalog__description">
-        <h1 class="welcome-block-catalog__title">Фото и видео</h1>
-        <p class="welcome-block-catalog__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-          забыть о политике и экономике.</p>
+      <div class="welcome-block__description">
+        <h1 class="welcome-block__title">Фото и видео</h1>
+        <p class="welcome-block__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
     </section>
     <section class="catalog">
       <ul class="catalog__list list-reset">
         <li class="catalog__item ">
-          <div class="catalog__wrapper">
+          <div class="catalog__img">
             <img class="catalog__img" src="img/photo-1-mobile.jpg" alt="неродные просторы" width="280" height="280">
-            <h2 class="catalog__title">неродные просторы</h2>
-            <p class="catalog__author">Автор фото: Борис</p>
-            <span class="catalog__likes">1350</span>
+          </div>
+          <div class="catalog__description">
+            <div class="catalog__description-wrapper">
+              <h2 class="catalog__title">Неродные просторы</h2>
+              <p class="catalog__author">Автор фото: Борис</p>
+            </div>
+            <button class="catalog__likes" type="button">
+              <span class="visually-hidden">Количество лайков</span>
+              1350
+            </button>
           </div>
         </li>
         <li class="catalog__item ">
-          <div class="catalog__wrapper">
+          <div class="catalog__img">
             <img class="catalog__img" src="img/photo-2-mobile.jpg" alt="неродные просторы" width="280" height="280">
-            <h2 class="catalog__title">Местная растительность</h2>
-            <p class="catalog__author">Автор фото: Сергей</p>
-            <span class="catalog__likes">143</span>
+          </div>
+          <div class="catalog__description">
+            <div class="catalog__description-wrapper">
+              <h2 class="catalog__title">Местная растительность</h2>
+              <p class="catalog__author">Автор фото: Сергей</p>
+            </div>
+            <button class="catalog__likes" type="button">
+              <span class="visually-hidden">Количество лайков</span>
+              143
+            </button>
           </div>
         </li>
         <li class="catalog__item ">
-          <div class="catalog__wrapper">
+          <div class="catalog__img">
             <img class="catalog__img" src="img/photo-3-mobile.jpg" alt="неродные просторы" width="280" height="280">
-            <h2 class="catalog__title">Дорога на север</h2>
-            <p class="catalog__author">Автор фото: Петр</p>
-            <span class="catalog__likes">96</span>
+          </div>
+          <div class="catalog__description">
+            <div class="catalog__description-wrapper">
+              <h2 class="catalog__title">Дорога на север</h2>
+              <p class="catalog__author">Автор фото: Сергей</p>
+            </div>
+            <button class="catalog__likes" type="button">
+              <span class="visually-hidden">Количество лайков</span>
+              143
+            </button>
           </div>
         </li>
         <li class="catalog__item ">
-          <div class="catalog__wrapper">
+          <div class="catalog__img">
             <img class="catalog__img" src="img/photo-4-desktop.jpg" alt="неродные просторы" width="280" height="280">
-            <h2 class="catalog__title">Дорога на север</h2>
-            <p class="catalog__author">Автор фото: Петр</p>
-            <span class="catalog__likes">254</span>
+          </div>
+          <div class="catalog__description">
+            <div class="catalog__description-wrapper">
+              <h2 class="catalog__title">Мост дьявола</h2>
+              <p class="catalog__author">Автор фото: Антон</p>
+            </div>
+            <button class="catalog__likes" type="button">
+              <span class="visually-hidden">Количество лайков</span>
+              254
+            </button>
           </div>
         </li>
       </ul>
     </section>
-    <section class="doubt">
-      <div class="doubt__wrapper">
-        <h2 class="doubt__title">Все еще сомневаетесь?</h2>
-        <p class="doubt__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
-          раз!</p>
+    <section class="video">
+      <h2 class="video__title">Все еще сомневаетесь?</h2>
+      <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <div class="video__container">
         <img src="img/video-mobile.jpg" alt="video" width="280" height="177">
       </div>
     </section>
