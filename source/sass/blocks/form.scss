@@ -1,25 +1,26 @@
 fieldset {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  border: none;
 }
 
-.form__contact-list {
+.form__fieldset--data {
   padding: 0;
 }
 
 .form__fieldset-title {
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
   padding: 0;
 }
 
 .form__contact-label {
+  font-family: "PT Sans";
+  font-style: normal;
   text-transform: uppercase;
 }
 
@@ -31,7 +32,7 @@ fieldset {
   padding-right: 16px;
   margin-bottom: 16px;
   border: none;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
