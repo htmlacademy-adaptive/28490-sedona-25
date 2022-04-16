@@ -1,0 +1,370 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.header {
+  display: flex;
+  margin: 0 auto;
+}
+
+.header__logo {
+  margin-left: 67px;
+}
+
+.main-navigation__toggle {
+  background-image: url("../img/icon-menu.svg");
+  height: 22px;
+  width: 22.9px;
+  border: transparent;
+  background-color: #ffffff;
+}
+
+.main-navigation__item {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-navigation__item--current {
+  color: #766357;
+}
+
+.welcome-block__image_text {
+  margin: 90px 19px 85px 19px;
+}
+
+.welcome-block__image {
+  background-color: rgba(130, 179, 211, 0.2);
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  height: 389px;
+}
+
+.welcome-block__catalog {
+  height: 214px;
+}
+
+.welcome-block__description {
+  font-family: "PT Sans";
+  font-style: normal;
+  text-align: center;
+}
+
+.welcome-block__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.welcome-block__text {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.welcome-block__divider {
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages__list {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.advantages__item {
+  font-family: "PT Sans";
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages__wrapper--true-town,
+.advantages__wrapper--divils-bridge {
+  color: #ffffff;
+  background-color: #81b3d2;
+  width: 320px;
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 54px 22px 0 16px;
+}
+
+.advantages__description,
+.advantages__number {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.advantages__description {
+  padding: 17px 22px 40px 16px;
+}
+
+.advantages__number {
+  padding: 11px 22px 0 16px;
+}
+
+.advantages__wrapper {
+  background-color: #eeeeee;
+  padding: 35px 16px 19.5px;
+}
+
+.advantages__other {
+  padding: 0;
+}
+
+.advantages__other-wrapper {
+  background-color: #eeeeee;
+  text-align: left;
+  padding-left: 65px;
+}
+
+.advantages__other-title {
+  padding-top: 30px;
+  padding-left: 8px;
+}
+
+.advantages__other-description {
+  padding-left: 8px;
+}
+
+.advantages__other-wrapper--motel {
+  background: left no-repeat url(../img/icon-house.svg);
+  background-position-x: 18px;
+  background-position-y: 25px;
+}
+
+.advantages__other-wrapper--food {
+  background: left no-repeat url(../img/icon-burger.svg);
+  background-position-x: 18px;
+  background-position-y: 25px;
+}
+
+.advantages__other-wrapper--souvenir {
+  background: left no-repeat url(../img/icon-gift.svg);
+  background-position-x: 18px;
+  background-position-y: 25px;
+}
+
+.advantages__divider-line {
+  width: 284px;
+  height: 1px;
+  background: #D6D6D6;
+  margin-left: 18px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+h3 {
+  margin: 0;
+}
+
+h2 {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+}
+
+p {
+  font-family: "PT Sans";
+  font-style: normal;
+}
+
+.list-reset {
+  list-style: none;
+}
+
+iframe {
+  width: 320px;
+  height: 350px;
+}
+
+.main-footer {
+  font-family: "PT Sans";
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-footer__tag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 29px 78px 34px 76px;
+}
+
+.main-footer__networks {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.networks__item {
+  width: 48px;
+  height: 48px;
+  background-color: #81B3D2;
+}
+
+.networks__item:first-child {
+  margin-right: 6px;
+}
+
+.networks__item:last-child {
+  margin-left: 6px;
+}
+
+.networks__link svg {
+  fill: #ffffff;
+  padding: 17px 12px 17px 12px;
+}
+
+.copyright {
+  display: flex;
+}
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 47px;
+}
+
+.copyright__link {
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+.interest {
+  font-family: "PT Sans";
+  font-style: normal;
+  padding-left: 39px 30px 32px 30px;
+}
+
+.interest__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  margin-top: 39px;
+}
+
+.interest__description {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.interest__button {
+  display: block;
+  width: 284px;
+  height: 58px;
+  color: #ffffff;
+  background: #81B3D2;
+  font-weight: 700;
+  font-size: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 26px;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 39px;
+}
+
+fieldset {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.form__fieldset--data {
+  padding: 0;
+}
+
+.form__fieldset-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.form__contact-label {
+  font-family: "PT Sans";
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.form__contact-input {
+  width: 280px;
+  height: 26px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 16px;
+  margin-bottom: 16px;
+  border: none;
+  background-color: #f2f2f2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+/*# sourceMappingURL=style.css.map */
