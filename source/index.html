@@ -15,29 +15,31 @@
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-navigation__list list-reset">
-        <li class="main-navigation__item main-navigation__item--current">
-          <a>Главная</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="catalog.html">Фото и видео</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="form.html">Форма отзыва</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="#">HTML academy</a>
-        </li>
-      </ul>
+      <div class="main-navigation__container">
+        <ul class="main-navigation__list list-reset">
+          <li class="main-navigation__item main-navigation__item--current">
+            <a>Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__list list-reset">
+          <li class="main-navigation__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="https://htmlacademy.ru">HTML academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="main-container">
     <section class="welcome-block">
       <div class="welcome-block__image">
-        <img class="welcome-block__image_text" alt="Welcome" src="img/welcome.svg" width="282" height="214"
-          alt="Welcome">
+        <img src="img/welcome.svg" width="282" height="214" alt="Welcome">
       </div>
-      <img class="welcome-block__divider" src="img/divider.png" width="320" height="37">
       <div class="welcome-block__description">
         <h1 class="welcome-block__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="welcome-block__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -46,73 +48,65 @@
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages__list list-reset">
-        <li class="advantages__item">
-          <div class="advantages__true-town">
-            <div class="advantages__wrapper--true-town">
-              <h3 class="advantages__title">Настоящий городок</h3>
+        <li class="advantages__item advantages__item--full">
+          <div class="advantages__wrapper advantages__wrapper--full">
+            <div class="advantages__container">
+              <h2 class="advantages__title">Настоящий городок</h2>
               <p class="advantages__number">— №1 —</p>
-              <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="advantages__description"> Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="advantages__image">
-              <img src="img/photo-city-mobile.jpg" width="320" height="260" alt="городок">
+            <div class="advantages__img">
+              <img src="img/photo-city-mobile.jpg" width="320" height="260" alt="Праздничный городок.">
             </div>
           </div>
-          <ul class="advantages__other list-reset">
-            <li class="advantages__item">
-              <div class="advantages__other-wrapper advantages__other-wrapper--motel">
-                <h3 class="advantages__other-title">Жилье</h3>
-                <p class="advantages__other-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__other-wrapper advantages__other-wrapper--food">
-                <h3 class="advantages__other-title">Еда</h3>
-                <p class="advantages__other-description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-              </div>
-            </li>
-            <li class="advantages__item">
-              <div class="advantages__other-wrapper advantages__other-wrapper--souvenir">
-                <h3 class="advantages__other-title">Сувениры</h3>
-                <p class="advantages__other-description">Не только китайского, но и местного производства!</p>
-              </div>
-            </li>
+          <ul class="advantages__attractions list-reset">
+            <div class="advantages__wrapper">
+              <li class="advantages__attractions-item advantages__attractions-item--motel">
+                <h3 class="advantages__title">Жилье</h3>
+                <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="advantages__attractions-item advantages__attractions-item--meal">
+                <h3 class="advantages__title">Еда</h3>
+                <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="advantages__attractions-item advantages__attractions-item--souvenirs">
+                <h3 class="advantages__title">Сувениры</h3>
+                <p class="advantages__description">Не только китайского, но и местного производства!</p>
+              </li>
+            </div>
           </ul>
         </li>
-        <li class="advantages__item">
-          <div class="advantages__divils-brige">
-            <div class="advantages__wrapper--divils-bridge">
-              <h3 class="advantages__title">Там есть мост дьявола</h3>
+        <li class="advantages__item advantages__item--full">
+          <div class="advantages__wrapper advantages__wrapper--full">
+            <div class="advantages__img">
+              <img src="img/photo-bridge-mobile.jpg" width="320" height="260" alt="Мост Дьявола.">
+            </div>
+            <div class="advantages__container">
+              <h3 class="advantages__title">Там есть мост Дьявола</h3>
               <p class="advantages__number">— №2 —</p>
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="advantages__image">
-              <img src="img/photo-bridge-mobile.jpg" width="320" height="260" alt="мост">
-            </div>
           </div>
         </li>
-        <li class="advantages__item advantages-item_area">
-          <div class="advantages__wrapper">
-            <h3 class="advantages__title">Небольшая площадь</h3>
-            <p class="advantages__number">— №3 —</p>
+        <li class="advantages__item">
+          <div class="advantages__container">
+            <h3 class="advantages__title ">Небольшая площадь</h3>
+            <p class="advantages__number">— №3 — </p>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
-            <div class="advantages__divider-line"></div>
           </div>
-
         </li>
-        <li class="advantages__item advantages-item_road">
-          <div class="advantages__wrapper">
+        <li class="advantages__item">
+          <div class="advantages__container">
             <h3 class="advantages__title">Красивая дорога</h3>
             <p class="advantages__number">— №4 —</p>
-            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            <div class="advantages__divider-line"></div>
+            <p class="advantages__description ">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
-
         </li>
-        <li class="advantages__item advantages-item_tourists">
-          <div class="advantages__wrapper">
-            <h3 class="advantages__title">Мало туристов</h3>
+        <li class="advantages__item">
+          <div class="advantages__container">
+            <h3 class="advantages__title ">Мало туристов</h3>
             <p class="advantages__number">— №5 —</p>
-            <p class="advantages__description">Большинство едет в Гранд каньон и толпится там</p>
+            <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </li>
       </ul>
@@ -127,10 +121,9 @@
       <a class="interest__button button" href="#">Найти гостиницу</a>
     </section>
     <section class="map">
-      <iframe class="map__sedona"
+      <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1670613.0995675384!2d-111.94931372968749!3d35.13376445878344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sru!4v1649701693365!5m2!1sen!2sru"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
   <footer class="main-footer">
@@ -147,7 +140,8 @@
       <li class="networks__item">
         <a class="networks__link" href="#">
           <svg width="22" height="18" viewBox="0 0 22 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="m21.4 1.6-3.1 15c-.3 1-.9 1.3-1.8.8l-4.8-3.6-2.3 2.3c-.3.2-.5.4-1 .4l.3-4.9 9-8c.4-.4-.1-.6-.6-.3l-11 7-4.8-1.5c-1-.3-1-1 .2-1.5L20 0c.9-.3 1.6.2 1.3 1.5Z"/>
+            <path
+              d="m21.4 1.6-3.1 15c-.3 1-.9 1.3-1.8.8l-4.8-3.6-2.3 2.3c-.3.2-.5.4-1 .4l.3-4.9 9-8c.4-.4-.1-.6-.6-.3l-11 7-4.8-1.5c-1-.3-1-1 .2-1.5L20 0c.9-.3 1.6.2 1.3 1.5Z" />
           </svg>
         </a>
       </li>
@@ -170,7 +164,8 @@
       </a>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
-<!-- Commit -->
 
 </html>

@@ -1,12 +1,8 @@
-fieldset {
-  font-family: "PT Sans";
-  font-style: normal;
+.form__fieldset {
+  font-family: $font;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-}
-
-.form__fieldset--data {
   padding: 0;
 }
 
@@ -19,7 +15,7 @@ fieldset {
 }
 
 .form__contact-label {
-  font-family: "PT Sans";
+  font-family: $font;
   font-style: normal;
   text-transform: uppercase;
 }

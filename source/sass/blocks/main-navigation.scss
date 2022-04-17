@@ -1,18 +1,53 @@
-.main-navigation__list {
+.main-navigation__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 10;
 
+  width: 23px;
+  height: 22px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
 }
 
-.main-navigation__toggle {
-  background-image: url("../img/icon-menu.svg");
-  height: 22px;
-  width: 22.9px;
-  border: transparent;
-  background-color: #ffffff;
+.main-navigation__container {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #81b3d2;
+}
+
+.main-navigation__container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 7px;
+
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 100%);
+}
+
+.main-navigation--open .main-navigation__container {
+  display: block;
+}
+
+.main-navigation--open .main-navigation__toggle {
+  background-image: url("../img/icon-cross.svg");
 }
 
 .main-navigation__item {
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: $font;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;

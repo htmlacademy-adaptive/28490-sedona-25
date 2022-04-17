@@ -1,5 +1,5 @@
 .main-footer {
-  font-family: 'PT Sans';
+  font-family: $font;
   font-style: normal;
   display: flex;
   flex-direction: column;
@@ -18,41 +18,4 @@
   display: flex;
   padding: 0;
   margin: 0;
-}
-
-.networks__item {
-  width: 48px;
-  height: 48px;
-  background-color: #81B3D2;
-}
-
-.networks__item:first-child {
-  margin-right: 6px;
-}
-
-.networks__item:last-child {
-  margin-left: 6px;
-}
-
-.networks__link svg{
-  fill: #ffffff;
-  padding: 17px 12px 17px 12px;
-}
-
-.copyright {
-  display: flex;
-
-}
-
-.copyright__text {
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 47px;
-}
-
-.copyright__link {
-  margin-top: 40px;
-  margin-left: 10px;
 }

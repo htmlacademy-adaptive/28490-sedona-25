@@ -15,20 +15,24 @@
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="catalog.html">Фото и видео</a>
-        </li>
-        <li class="main-navigation__item main-navigation__item--current">
-          <a>Форма отзыва</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="https://htmlacademy.ru">HTML academy</a>
-        </li>
-      </ul>
+      <div class="main-navigation__container">
+        <ul class="main-navigation__list list-reset">
+          <li class="main-navigation__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="catalog.html">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__list list-reset">
+          <li class="main-navigation__item main-navigation__item--current">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="https://htmlacademy.ru">HTML academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="main-container">
@@ -196,4 +200,8 @@
       </div>
     </div>
   </section>
+
+  <script src="js/script.js"></script>
 </body>
+
+</html>

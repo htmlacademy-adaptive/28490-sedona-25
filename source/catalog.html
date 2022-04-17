@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,30 +15,34 @@
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a href="index.html">Главная</a>
-        </li>
-        <li class="main-navigation__item main-navigation__item--current">
-          <a>Фото и видео</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="form.html">Форма отзыва</a>
-        </li>
-        <li class="main-navigation__item">
-          <a href="https://htmlacademy.ru">HTML academy</a>
-        </li>
-      </ul>
+      <div class="main-navigation__container">
+        <ul class="main-navigation__list list-reset">
+          <li class="main-navigation__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-navigation__item main-navigation__item--current">
+            <a>Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__list list-reset">
+          <li class="main-navigation__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="https://htmlacademy.ru">HTML academy</a>
+          </li>
+        </ul>
     </nav>
   </header>
   <main class="main-container">
     <section class="welcome-block welcome-block--page">
       <div class="welcome-block__image welcome-block-catalog>
-        <img src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
+        <img src=" img/text-sedona.svg" width="229" height="39" alt="Sedona">
       </div>
       <div class="welcome-block__description">
         <h1 class="welcome-block__title">Фото и видео</h1>
-        <p class="welcome-block__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <p class="welcome-block__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике и экономике.</p>
       </div>
     </section>
     <section class="catalog">
@@ -106,7 +111,8 @@
     </section>
     <section class="video">
       <h2 class="video__title">Все еще сомневаетесь?</h2>
-      <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+        раз!</p>
       <div class="video__container">
         <img src="img/video-mobile.jpg" alt="video" width="280" height="177">
       </div>
@@ -125,7 +131,8 @@
         <li class="networks__item">
           <a class="networks__link" href="#">
             <svg width="22" height="18" viewBox="0 0 22 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="m21.4 1.6-3.1 15c-.3 1-.9 1.3-1.8.8l-4.8-3.6-2.3 2.3c-.3.2-.5.4-1 .4l.3-4.9 9-8c.4-.4-.1-.6-.6-.3l-11 7-4.8-1.5c-1-.3-1-1 .2-1.5L20 0c.9-.3 1.6.2 1.3 1.5Z"/>
+              <path
+                d="m21.4 1.6-3.1 15c-.3 1-.9 1.3-1.8.8l-4.8-3.6-2.3 2.3c-.3.2-.5.4-1 .4l.3-4.9 9-8c.4-.4-.1-.6-.6-.3l-11 7-4.8-1.5c-1-.3-1-1 .2-1.5L20 0c.9-.3 1.6.2 1.3 1.5Z" />
             </svg>
           </a>
         </li>
@@ -148,5 +155,8 @@
         </a>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>

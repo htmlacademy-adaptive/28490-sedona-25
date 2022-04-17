@@ -3,19 +3,23 @@
 }
 
 .welcome-block__image {
-  background-color: hsl(204 48% 67% / 0.2);
+  background-color: #5ca5d5;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  height: 389px;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 85px;
 }
 
-.welcome-block__catalog {
+.welcome-block__image img {
+  display: block;
+  width: 282px;
   height: 214px;
+  margin: 0 auto;
 }
 
 .welcome-block__description {
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: $font;
   text-align: center;
 }
 
@@ -30,9 +34,4 @@
   font-weight: 400;
   font-size: 21px;
   line-height: 26px;
-}
-
-.welcome-block__divider {
-    display: block;
-    margin: 0 auto;
 }
