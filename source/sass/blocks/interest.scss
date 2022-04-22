@@ -25,3 +25,20 @@
 .interest__button {
   color: #ffffff;
 }
+
+.interest__button:hover {
+	background-color: #669ec0;
+}
+
+.interest__button:focus {
+	background-color: #5496bd;
+}
+
+.interest__button:active {
+	background-color: #5496bd;
+  opacity: 0.3;
+}
+
+.interest__button:disabled {
+  background-color: #e5e5e5;
+}
