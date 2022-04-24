@@ -10,9 +10,11 @@ html {
 }
 
 body {
-  margin: auto;
+  margin: 0 auto;
   padding: 0;
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   min-height: 100%;

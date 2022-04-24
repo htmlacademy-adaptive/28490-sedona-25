@@ -73,13 +73,15 @@
               <li class="form__contact-item">
                 <label class="form__contact-label" for="phone">Контактный телефон*:</label>
                 <div class="form__input-wrapper form__input-wrapper--phone">
-                  <input class="form__contact-input" id="phone" type="text" name="phone" placeholder="Введите телефон">
+                  <input class="form__contact-input form__contact-input--phone" id="phone" type="text" name="phone"
+                    placeholder="Введите телефон">
                 </div>
               </li>
-              <li class="form__contact-item">
+              <li class="form__contact-item form__contact-item--email">
                 <label class="form__contact-label" for="e-mail">Электронная почта*:</label>
                 <div class="form__input-wrapper form__input-wrapper--mail">
-                  <input class="form__contact-input" id="e-mail" type="text" name="e-mail" placeholder="Введите e-mail">
+                  <input class="form__contact-input form__contact-input--email" id="e-mail" type="text" name="e-mail"
+                    placeholder="Введите e-mail">
                 </div>
               </li>
             </ul>
@@ -194,7 +196,7 @@
       <h2 class="modal__title">Что-то пошло не так</h2>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <div class="modal__button-container">
-        <button class="modal__button modal__button--failure button" type="button">Ок</button>
+        <button class="modal__button button" type="button">Ок</button>
       </div>
     </div>
 
@@ -203,7 +205,7 @@
       <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его
         на сайте</p>
       <div class="modal__button-container modal__button-container--success">
-        <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
+        <button class="modal__button button" type="button">Закрыть окно</button>
       </div>
     </div>
   </section>

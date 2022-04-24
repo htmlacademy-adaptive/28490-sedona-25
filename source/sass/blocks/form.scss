@@ -6,7 +6,6 @@
   border: none;
   padding: 0;
   margin: 0;
-
 }
 
 .form__fieldset-title {
@@ -20,7 +19,6 @@
 
 .form__contact-item {
   width: 280px;
-  margin-left: 20px;
 }
 
 .form__contact-label {
@@ -38,12 +36,25 @@
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 16px;
+  padding-right: 70px;
   margin-bottom: 16px;
   border: none;
   background-color: #f2f2f2;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+}
+
+.form__contact-input--phone {
+  background-image: url("../img/form-phone.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.form__contact-input--email {
+  background-image: url("../img/form-email.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .form__options-item {
@@ -60,35 +71,16 @@
   position: relative;
 }
 
-.form__fieldset::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  background-color: #d6d6d6;
-}
-
-.form__fieldset:first-child::before {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  background-color: #d6d6d6;
+.form__fieldset {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #d6d6d6;
+  padding-left: 20px;
 }
 
 .form__input-wrapper {
   width: 280px;
   height: 58px;
-}
-
-.form__contact-label #e-mail {
-  margin-top: 20px;
 }
 
 .form__contact-input:hover {
@@ -97,22 +89,7 @@
 
 .form__contact-input:active {
   background: #ffffff;
-  border: 4px solid #E5E5E5;
-}
-
-#e-mail {
-  width: 222px; 
-
-}
-
-.form__input-wrapper--mail {
-  background-image: url("../img/form-email.svg");
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-#phone {
-  width: 222px;
+  border: 4px solid #e5e5e5;
 }
 
 .form__input-wrapper--phone {
@@ -130,12 +107,11 @@
   position: absolute;
 }
 
-.form__options-input[type="radio"] + .form__options-mark {
+.form__options-input[type="radio"]+.form__options-mark {
   width: 46px;
   height: 46px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 50%;
-  margin-left: 20px;
 }
 
 .form__options-input[type="radio"]:checked + .form__options-mark::before {
@@ -144,7 +120,7 @@
   left: 15px;
   width: 16px;
   height: 16px;
-  background-color: #333333;;
+  background-color: #333333;
   border-radius: 50%;
   content: "";
 }
@@ -153,15 +129,14 @@
   position: absolute;
 }
 
-.form__options-input[type="checkbox"] + .form__options-mark--checkbox {
+.form__options-input[type="checkbox"]+.form__options-mark--checkbox {
   width: 46px;
   height: 46px;
-  background-color: #F2F2F2;
-  margin-left: 20px;
+  background-color: #f2f2f2;
 }
 
-.form__options-input[type="checkbox"] + .form__options-mark--checkbox::before,
-.form__options-input[type="checkbox"] + .form__options-mark--checkbox::after {
+.form__options-input[type="checkbox"]+.form__options-mark--checkbox::before,
+.form__options-input[type="checkbox"]+.form__options-mark--checkbox::after {
   position: absolute;
   top: 15px;
   left: 13px;
@@ -179,30 +154,30 @@
   margin-left: 82px;
 }
 
-#recall-field {
+.form__fieldset--recall textarea {
   font-family: $font;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
-  width: 279px;
+  width: 100%;
   height: 150px;
+  resize: none;
   border: none;
-  background: #F2F2F2;
-  margin-left: 20px;
-  margin-bottom: 56px;
+  background: #f2f2f2;
   padding: 16px 16px 16px 16px;
 }
 
 .form__submit {
+  width: 280px;
   color: #ffffff;
 }
 
 .form__note {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
+  text-align: right;
   color: rgba(51, 51, 51, 0.6);
-  margin-left: 163px;
 }

@@ -14,8 +14,8 @@
 }
 
 .interest__description {
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 32px;
@@ -27,15 +27,15 @@
 }
 
 .interest__button:hover {
-	background-color: #669ec0;
+  background-color: #669ec0;
 }
 
 .interest__button:focus {
-	background-color: #5496bd;
+  background-color: #5496bd;
 }
 
 .interest__button:active {
-	background-color: #5496bd;
+  background-color: #5496bd;
   opacity: 0.3;
 }
 
