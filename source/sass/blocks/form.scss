@@ -6,6 +6,11 @@
   border: none;
   padding: 0;
   margin: 0;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #d6d6d6;
+  padding-left: 20px;
+  position: relative;
 }
 
 .form__fieldset-title {
@@ -15,6 +20,8 @@
   text-transform: uppercase;
   padding: 0;
   text-align: center;
+  margin-bottom: 20px;
+  margin-top: 59px;
 }
 
 .form__contact-item {
@@ -67,17 +74,6 @@
   margin-bottom: 16px;
 }
 
-.form__fieldset {
-  position: relative;
-}
-
-.form__fieldset {
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: #d6d6d6;
-  padding-left: 20px;
-}
-
 .form__input-wrapper {
   width: 280px;
   height: 58px;
@@ -98,16 +94,11 @@
   background-repeat: no-repeat;
 }
 
-.form__fieldset-title {
-  margin-bottom: 20px;
-  margin-top: 59px;
-}
-
 .form__options-mark {
   position: absolute;
 }
 
-.form__options-input[type="radio"]+.form__options-mark {
+.form__options-input[type="radio"] + .form__options-mark {
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
@@ -129,20 +120,20 @@
   position: absolute;
 }
 
-.form__options-input[type="checkbox"]+.form__options-mark--checkbox {
+.form__options-input[type="checkbox"] + .form__options-mark--checkbox {
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
 }
 
-.form__options-input[type="checkbox"]+.form__options-mark--checkbox::before,
-.form__options-input[type="checkbox"]+.form__options-mark--checkbox::after {
+.form__options-input[type="checkbox"] + .form__options-mark--checkbox::before,
+.form__options-input[type="checkbox"] + .form__options-mark--checkbox::after {
   position: absolute;
   top: 15px;
   left: 13px;
   width: 22px;
   height: 16px;
-  background-image: url(../img/checked.svg);
+  background-image: url("../img/checked.svg");
   content: "";
 }
 

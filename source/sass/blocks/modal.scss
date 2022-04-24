@@ -6,7 +6,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   transform: translate(-50%, -50%);
-
+  visibility: hidden;
 }
 
 .modal__message {
@@ -25,7 +25,6 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-top: 45px;
 }
 
 .modal__text {
@@ -43,10 +42,18 @@
   margin-top: 30px;
 }
 
+.modal__message--success {
+  padding-top: 39px;
+}
+
 .modal__message--success .modal__button {
   width: 280px;
   color: #ffffff;
   margin: 20px 20px 20px 20px;
+}
+
+.modal__message--failure {
+  padding-top: 45px;
 }
 
 .modal__message--failure .modal__button {
