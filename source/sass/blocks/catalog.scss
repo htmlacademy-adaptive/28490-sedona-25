@@ -1,0 +1,39 @@
+.catalog__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.catalog__author {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.catalog__likes {
+  font-family: $font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  height: 26px;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 25px;
+  padding-left: 37px;
+  padding-top: 7px;
+}
+
+.catalog__item {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #d6d6d6;
+  margin-top: 24px;
+  padding-left: 24px;
+}

@@ -1,0 +1,44 @@
+.interest {
+  font-family: $font;
+  font-style: normal;
+  padding: 39px 18px 32px;
+}
+
+.interest__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  margin-top: 39px;
+}
+
+.interest__description {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+
+.interest__button {
+  color: #ffffff;
+}
+
+.interest__button:hover {
+  background-color: #669ec0;
+}
+
+.interest__button:focus {
+  background-color: #5496bd;
+}
+
+.interest__button:active {
+  background-color: #5496bd;
+  opacity: 0.3;
+}
+
+.interest__button:disabled {
+  background-color: #e5e5e5;
+}
