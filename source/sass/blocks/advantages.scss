@@ -1,0 +1,136 @@
+.advantages {
+  position: relative;
+}
+
+.advantages__item {
+  position: relative;
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__container {
+  padding: 8px 35px 24px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+}
+
+.advantages__item--full:first-child .advantages__container {
+  padding-top: 55px;
+  padding-bottom: 39px;
+}
+
+.advantages__item--full:first-child .advantages__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 37px;
+
+  background-image: url("../img/advantages-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.advantages__title {
+  margin-bottom: 11px;
+
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantages__item p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantages__container p + p {
+  margin-top: 17px;
+}
+
+.advantages__wrapper--full .advantages__container {
+  padding: 21px 20px 35px;
+
+  background-color: #81b3d2;
+}
+
+.advantages__wrapper--full .advantages__title {
+  color: #ffffff;
+}
+
+.advantages__wrapper--full p {
+  color: #ffffff;
+}
+
+.advantages__img {
+  width: 100%;
+  height: 260px;
+}
+
+.advantages__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.advantages__attractions {
+  padding-bottom: 50px;
+}
+
+.advantages__attractions-item {
+  padding: 13px 15px 0 65px;
+
+  text-transform: uppercase;
+
+  background-repeat: no-repeat;
+}
+
+.advantages__attractions-item .advantages__title {
+  margin-bottom: 16px;
+}
+
+.advantages__attractions-item--motel {
+  background-image: url("../img/icon-house.svg");
+  background-position: 18px 21px;
+}
+
+.advantages__attractions-item--meal {
+  padding-left: 70px;
+
+  background-image: url("../img/icon-burger.svg");
+  background-position: 18px 21px;
+}
+
+.advantages__attractions-item--souvenirs {
+  padding-left: 62px;
+
+  background-image: url("../img/icon-gift.svg");
+  background-position: 22px 21px;
+}
+
+.advantages__item--full:nth-child(2n) .advantages__img {
+  order: 1;
+}
+
+.advantages__item:not(.advantages__item--full)::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+
+  height: 1px;
+
+  background-color: #d6d6d6;
+}

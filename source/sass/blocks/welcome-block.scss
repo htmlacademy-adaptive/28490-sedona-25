@@ -1,0 +1,60 @@
+.welcome-block__image_text {
+  margin: 90px 19px 85px 19px;
+}
+
+.welcome-block__image {
+  background-color: #5ca5d5;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 85px;
+}
+
+.welcome-block__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 37px;
+
+  background-image: url("../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.welcome-block--page {
+  border-bottom-style: solid;
+  border-color: #e5e5e5;
+  border-width: 1px;
+  padding-bottom: 20px;
+}
+
+.welcome-block__image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.welcome-block__description {
+  font-family: $font;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.welcome-block__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.welcome-block__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}

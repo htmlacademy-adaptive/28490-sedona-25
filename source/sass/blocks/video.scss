@@ -1,0 +1,28 @@
+.video {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.video__text {
+  text-transform: uppercase;
+  padding-left: 28px;
+  padding-right: 26px;
+  text-align: center;
+}
+
+.video_title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.video__container {
+  padding: 0 20px 0 20px;
+}
+
+.video__container img {
+  background-image: url("../img/play-icon.svg");
+  background-size: cover;
+}
