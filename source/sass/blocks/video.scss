@@ -18,10 +18,6 @@
   align-items: center;
 }
 
-.video__description {
-
-}
-
 .video__container {
   padding: 0 20px 0 20px;
 }
@@ -29,4 +25,19 @@
 .video__container img {
   background-image: url("../img/play-icon.svg");
   background-size: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    margin-top: 58px;
+  }
+
+  .video_title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .video__description {
+    margin-bottom: 66px;
+  }
 }

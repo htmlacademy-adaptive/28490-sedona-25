@@ -37,8 +37,8 @@
   </header>
   <main class="main-container">
     <section class="welcome-block welcome-block--page">
-      <div class="welcome-block__image">
-        <img src="img/text-sedona.svg" width="229" height="39" alt="Sedona.">
+      <div class="welcome-block__sedona">
+        
       </div>
       <div class="welcome-block__description">
         <h1 class="welcome-block__title">Оставьте свой отзыв</h1>
@@ -73,13 +73,13 @@
               <li class="form__contact-item">
                 <label class="form__contact-label" for="phone">Контактный телефон*:</label>
                 <div class="form__input-wrapper form__input-wrapper--phone">
-                  <input class="form__contact-input" id="phone" type="text" name="phone" placeholder="Введите телефон">
+                  <input class="form__contact-input form__contact-input--phone" id="phone" type="text" name="phone" placeholder="Введите телефон">
                 </div>
               </li>
               <li class="form__contact-item">
                 <label class="form__contact-label" for="e-mail">Электронная почта*:</label>
                 <div class="form__input-wrapper form__input-wrapper--mail">
-                  <input class="form__contact-input" id="e-mail" type="text" name="e-mail" placeholder="Введите e-mail">
+                  <input class="form__contact-input form__contact-input--email" id="e-mail" type="text" name="e-mail" placeholder="Введите e-mail">
                 </div>
               </li>
             </ul>
@@ -181,7 +181,7 @@
       </a>
     </div>
   </footer>
-  <section class="modal">
+  <section class="modal modal--success">
     <div class="modal__message modal__message--failure">
       <h2 class="modal__title">Что-то пошло не так</h2>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>

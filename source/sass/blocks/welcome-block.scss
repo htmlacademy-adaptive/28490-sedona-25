@@ -3,32 +3,27 @@
 }
 
 .welcome-block__image {
+  height: 389px;
   background-color: #5ca5d5;
-  background-image: url("../img/back-mobile.jpg");
+  background-image:
+    url("../img/welcome.svg"),
+    url("../img/intro-welcome.svg"),
+    url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 90px;
-  padding-bottom: 85px;
+  background-position: center, bottom;
+  background-size: 282px 214px, 100%, 100%;
 }
 
-.welcome-block__image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-
-  height: 37px;
-
-  background-image: url("../img/intro-triangle.svg");
+.welcome-block__sedona {
+  height: 389px;
+  background-color: #5ca5d5;
+  background-image:
+    url("../img/text-sedona.svg"),
+    url("../img/intro-welcome.svg"),
+    url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.welcome-block__image img {
-  display: block;
-  margin: 0 auto;
+  background-position: center, bottom;
+  background-size: 282px 214px, 100%, 100%;
 }
 
 .welcome-block__description {
@@ -49,4 +44,38 @@
   font-weight: 400;
   font-size: 21px;
   line-height: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .welcome-block__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .welcome-block__image {
+    height: 518px;
+    background-color: #5ca5d5;
+    background-image:
+      url("../img/welcome.svg"),
+      url("../img/intro-welcome.svg"),
+      url("../img/back-desktop.jpg");
+    background-position: center, bottom;
+    background-size: 461px 350px, cover, cover;
+  }
+
+  .welcome-block__sedona {
+    height: 389px;
+    background-color: #5ca5d5;
+    background-image:
+      url("../img/text-sedona.svg"),
+      url("../img/intro-welcome.svg"),
+      url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center, bottom;
+    background-size: 282px 214px, 100%, 100%;
+  }
+
+  .welcome-block__description {
+    width: 459px;
+  }
 }

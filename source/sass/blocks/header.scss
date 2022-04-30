@@ -14,3 +14,9 @@
 
   transform: translateX(-50%);
 }
+
+@media (min-width: $tablet-width) {
+  .header__logo {
+    z-index: 1;
+  }
+}

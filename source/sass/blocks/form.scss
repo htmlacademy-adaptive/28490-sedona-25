@@ -1,6 +1,5 @@
-.form {}
-
 .form__fieldset {
+  position: relative;
   font-family: $font;
   font-weight: 400;
   font-size: 14px;
@@ -21,7 +20,11 @@
 .form__contact-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.form__contact-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__contact-label {
@@ -53,31 +56,6 @@
   margin-bottom: 36px;
 }
 
-.form__fieldset {
-  position: relative;
-}
-
-.form__fieldset::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  background-color: #d6d6d6;
-}
-
-.form__fieldset:first-child:before {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  left: 0;
-  height: 1px;
-  background-color: #d6d6d6;
-}
-
 .form__options-mark {
   background-color: #2d1f1f;
   border: none;
@@ -91,21 +69,13 @@
   height: 58px;
 }
 
-#e-mail {
-  width: 222px;
-}
-
-.form__input-wrapper--mail {
+.form__contact-input--email {
   background-image: url("../img/form-email.svg");
   background-position: right;
   background-repeat: no-repeat;
 }
 
-#phone {
-  width: 222px;
-}
-
-.form__input-wrapper--phone {
+.form__contact-input--phone {
   background-image: url("../img/form-phone.svg");
   background-position: right;
   background-repeat: no-repeat;
@@ -115,7 +85,7 @@
   padding-left: 16px;
 }
 
-#recall-field {
+.form__fieldset--recall textarea {
   font-family: $font;
   font-weight: 700;
   font-size: 18px;
@@ -124,14 +94,14 @@
   width: 279px;
   height: 150px;
   border: none;
-  background: #F2F2F2;
-  margin-left: 20px;
+  background: #f2f2f2;
   margin-bottom: 56px;
-  padding: 16px 16px 16px 16px;
+  padding: 16px;
 }
 
 .form__submit {
   color: #ffffff;
+  margin: 0;
 }
 
 .form__note {

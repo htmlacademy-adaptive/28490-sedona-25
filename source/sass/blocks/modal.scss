@@ -1,13 +1,28 @@
-.modal__message {
-  width: 320px;
-  min-height: 280px;
-  display: flex;
-  flex-direction: column;
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
   align-items: center;
 }
 
-.modal__message--failure {
-  height: 280px;
+.modal__message {
+  width: 320px;
+  text-align: center;
+  display: none;
+  background-color: #ffffff;
+}
+
+.modal--success .modal__message--success {
+  display: block;
+}
+
+.modal--error .modal__message--error {
+  display: block;
 }
 
 .modal__title {
@@ -31,20 +46,18 @@
 .modal__button-container--success {
   width: 320px;
   height: 98px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   margin-top: 30px;
 }
 
 .modal__button--success {
   width: 280px;
-  height: 58px;
   color: #ffffff;
   margin: 20px 20px 20px 20px;
 }
 
 .modal__button--failure {
   width: 180px;
-  height: 58px;
   color: #ffffff;
   margin-top: 28px;
 }
