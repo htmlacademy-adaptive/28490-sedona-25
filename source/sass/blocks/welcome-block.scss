@@ -6,24 +6,22 @@
   height: 389px;
   background-color: #5ca5d5;
   background-image:
-    url("../img/welcome.svg"),
     url("../img/intro-welcome.svg"),
     url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center, bottom;
-  background-size: 282px 214px, 100%, 100%;
+  background-position: bottom;
+  background-size: 100%, cover;
 }
 
 .welcome-block__sedona {
   height: 389px;
   background-color: #5ca5d5;
   background-image:
-    url("../img/text-sedona.svg"),
     url("../img/intro-welcome.svg"),
     url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center, bottom;
-  background-size: 282px 214px, 100%, 100%;
+  background-position: bottom;
+  background-size: 100%, cover;
 }
 
 .welcome-block__description {
@@ -56,23 +54,28 @@
     height: 518px;
     background-color: #5ca5d5;
     background-image:
-      url("../img/welcome.svg"),
       url("../img/intro-welcome.svg"),
       url("../img/back-desktop.jpg");
-    background-position: center, bottom;
-    background-size: 461px 350px, cover, cover;
+    background-position: bottom;
+  }
+
+  .welcome-block__image img {
+    margin-top: 90px;
   }
 
   .welcome-block__sedona {
     height: 389px;
     background-color: #5ca5d5;
     background-image:
-      url("../img/text-sedona.svg"),
       url("../img/intro-welcome.svg"),
       url("../img/back-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: center, bottom;
-    background-size: 282px 214px, 100%, 100%;
+    background-position: bottom;
+    background-size: cover, cover;
+  }
+
+  .welcome-block__sedona img {
+    margin-top: 85px;
   }
 
   .welcome-block__description {
