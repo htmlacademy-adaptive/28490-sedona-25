@@ -72,14 +72,16 @@
             <ul class="form__contact-list list-reset">
               <li class="form__contact-item">
                 <label class="form__contact-label" for="phone">Контактный телефон*:</label>
-                <div class="form__input-wrapper form__input-wrapper--phone">
-                  <input class="form__contact-input form__contact-input--phone" id="phone" type="text" name="phone" placeholder="Введите телефон">
+                <div class="form__input-wrapper form__input-wrapper--phone">=======
+                  <input class="form__contact-input form__contact-input--phone" id="phone" type="text" name="phone"
+                    placeholder="Введите телефон">
                 </div>
               </li>
-              <li class="form__contact-item">
+              <li class="form__contact-item form__contact-item--email">
                 <label class="form__contact-label" for="e-mail">Электронная почта*:</label>
-                <div class="form__input-wrapper form__input-wrapper--mail">
-                  <input class="form__contact-input form__contact-input--email" id="e-mail" type="text" name="e-mail" placeholder="Введите e-mail">
+                <div class="form__input-wrapper form__input-wrapper--mail">=======
+                  <input class="form__contact-input form__contact-input--email" id="e-mail" type="text" name="e-mail"
+                    placeholder="Введите e-mail">
                 </div>
               </li>
             </ul>
@@ -91,18 +93,21 @@
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="radio" name="feedback" value="положительное"
                 id="filter-positive" checked="">
+              <span class="form__options-mark"></span>
               <label class="form__options-label form__options-label--radio" for="filter-positive">Скорее
                 положительное</label>
             </li>
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="radio" name="feedback" value="отрицательное"
                 id="filter-negative">
+              <span class="form__options-mark"></span>
               <label class="form__options-label form__options-label--radio" for="filter-negative">Скорее
                 отрицательное</label>
             </li>
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="radio" name="feedback" value="затрудняюсь"
                 id="filter-difficult">
+              <span class="form__options-mark"></span>
               <label class="form__options-label form__options-label--radio" for="filter-difficult">Затрудняюсь
                 ответить</label>
             </li>
@@ -114,21 +119,25 @@
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="мост-дьявола"
                 id="devil-bridge" checked="">
+              <span class="form__options-mark--checkbox"></span>
               <label class="form__options-label form__options-label--check" for="devil-bridge">Мост Дьявола</label>
             </li>
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="гора-колокол"
                 id="bell-mountain" checked="">
+              <span class="form__options-mark--checkbox"></span>
               <label class="form__options-label form__options-label--check" for="bell-mountain">Гора-Колокол</label>
             </li>
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="Слайд-парк"
                 id="slide-park" checked="">
+              <span class="form__options-mark--checkbox"></span>
               <label class="form__options-label form__options-label--check" for="slide-park">Слайд-парк</label>
             </li>
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="attractions"
                 value="Красные-скалы" id="red-rocks">
+              <span class="form__options-mark--checkbox"></span>
               <label class="form__options-label form__options-label--check" for="red-rocks">Красные скалы</label>
             </li>
           </ul>
@@ -166,7 +175,8 @@
       <li class="networks__item">
         <a class="networks__link networks__link--youtube" href="#">
           <svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z" />
+            <path
+              d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z" />
           </svg>
         </a>
       </li>
@@ -186,7 +196,7 @@
       <h2 class="modal__title">Что-то пошло не так</h2>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <div class="modal__button-container">
-        <button class="modal__button modal__button--failure button" type="button">Ок</button>
+        <button class="modal__button button" type="button">Ок</button>
       </div>
     </div>
 
@@ -195,7 +205,7 @@
       <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его
         на сайте</p>
       <div class="modal__button-container modal__button-container--success">
-        <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
+        <button class="modal__button button" type="button">Закрыть окно</button>
       </div>
     </div>
   </section>
