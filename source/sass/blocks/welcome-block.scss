@@ -24,6 +24,13 @@
   background-size: 100%, cover;
 }
 
+.welcome-block--page {
+  border-bottom-style: solid;
+  border-color: #e5e5e5;
+  border-width: 1px;
+  padding-bottom: 20px;
+}
+
 .welcome-block__description {
   font-family: $font;
   text-align: center;
@@ -40,8 +47,9 @@
 
 .welcome-block__text {
   font-weight: 400;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {

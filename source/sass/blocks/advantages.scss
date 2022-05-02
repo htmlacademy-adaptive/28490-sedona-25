@@ -152,6 +152,10 @@
     grid-column: 2 / 4;
   }
 
+  .advantages__attractions {
+    display: flex;
+  }
+
   .advantages__attractions-item--motel {
     background: no-repeat url("../img/icon-house-desktop.svg");
     background-position: center top 85px;
