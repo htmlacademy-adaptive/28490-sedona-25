@@ -1,44 +1,53 @@
 .interest {
-  font-family: $font;
-  font-style: normal;
-  padding: 39px 18px 32px;
+  padding: 20px 18px 48px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 29px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
+  }
 }
 
 .interest__title {
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  margin-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+    font-size: 30px;
+  }
 }
 
 .interest__description {
+  margin-bottom: 31px;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 32px;
+  color: #333333;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
+  }
 }
 
+.interest__description br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
 
 .interest__button {
-  color: #ffffff;
-}
-
-.interest__button:hover {
-  background-color: #669ec0;
-}
-
-.interest__button:focus {
-  background-color: #5496bd;
-}
-
-.interest__button:active {
-  background-color: #5496bd;
-  opacity: 0.3;
-}
-
-.interest__button:disabled {
-  background-color: #e5e5e5;
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }

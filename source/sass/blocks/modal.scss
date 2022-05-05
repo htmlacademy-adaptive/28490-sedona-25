@@ -1,21 +1,30 @@
 .modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
-  transform: translate(-50%, -50%);
-  visibility: hidden;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal__message {
   position: relative;
   margin: auto;
   width: 320px;
-  min-height: 280px;
-  background-color: #ffffff;
   text-align: center;
+  display: none;
+  background-color: #ffffff;
+}
+
+.modal--success .modal__message--success {
+  display: block;
+}
+
+.modal--error .modal__message--error {
+  display: block;
 }
 
 .modal__title {
@@ -58,7 +67,6 @@
 
 .modal__message--failure .modal__button {
   width: 180px;
-  height: 58px;
   color: #ffffff;
   margin-top: 28px;
 }
