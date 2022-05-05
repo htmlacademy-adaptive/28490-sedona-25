@@ -7,27 +7,32 @@
 html {
   box-sizing: border-box;
   height: 100%;
+  margin: 0;
+  padding: 0;
+
+  background-color: #f2f2f2;
 }
 
 body {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
+  min-height: 100%;
   margin: 0 auto;
   padding: 0;
-  width: 100%;
-  min-height: 100%;
-  font-family: $font;
+
   font-style: normal;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 21px;
+  font-family: $font;
+
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 img {
   max-width: 100%;
+
   object-fit: cover;
   object-position: center;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
