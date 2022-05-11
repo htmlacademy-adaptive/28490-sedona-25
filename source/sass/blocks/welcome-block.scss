@@ -1,14 +1,15 @@
 .welcome-block__image {
   padding-top: 90px;
   padding-bottom: 85px;
-  // height: 389px;
 
-  background-color: #5ca5d5;
-  background-image: url("../img/intro-welcome.svg"),
-    url("../img/back-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background-color: #5ca5d5;
+    background-image: url("../img/intro-welcome.svg"),
+      url("../img/back-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 76px;

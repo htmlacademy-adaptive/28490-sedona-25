@@ -1,9 +1,20 @@
+import squoosh from 'gulp-libsquoosh';
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+
+export const createWebp = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+    .pipe(squoosh({
+      encodeOptions: {
+        webp: {},
+      },
+    }))
+    .pipe(gulp.dest('source/img'))
+}
 
 // Styles
 
