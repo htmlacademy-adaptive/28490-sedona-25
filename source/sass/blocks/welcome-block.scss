@@ -1,33 +1,30 @@
 .welcome-block__image {
   padding-top: 90px;
   padding-bottom: 85px;
-  background-color: #5ca5d5;
-  background-image: url("../img/intro-welcome.svg"),
-    url("../img/back-mobile.jpg");
+
+  background-color: #8ea8c5;
+  background-image: url("../img/intro-triangle-desktop.svg"),
+    url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle-desktop.svg"),
+      url("../img/back-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 76px;
     padding-bottom: 92px;
     background-size: 156%, cover;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro-welcome.svg"),
-        url("../img/back-tablet@2x.jpg");
-    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/intro-welcome.svg"),
-      url("../img/back-desktop.jpg");
     background-size: contain, cover;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro-welcome.svg"),
-        url("../img/back-desktop@2x.jpg");
-    }
   }
 }
 

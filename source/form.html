@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="no-js">
   <header class="header">
     <a class="header__logo" href="index.html">
       <img src="img/logo.svg" alt="Logo" width="185" height="96">
@@ -138,53 +138,57 @@
       </form>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer main-footer--page">
     <a class="main-footer__tag" href="#">#visitsedona</a>
     <ul class="main-footer__networks networks list-reset">
       <li class="networks__item">
         <a class="networks__link" href="#">
-          <svg class="networks__icon" width="24" height="14">
+          <svg class="networks__icon" width="24" height="24">
             <use href="img/sprite.svg#icon-vk"></use>
           </svg>
         </a>
       </li>
       <li class="networks__item">
         <a class="networks__link" href="#">
-          <svg class="networks__icon" width="22" height="18">
+          <svg class="networks__icon" width="24" height="24">
             <use href="img/sprite.svg#icon-telegram"></use>
           </svg>
         </a>
       </li>
       <li class="networks__item">
         <a class="networks__link networks__link--youtube" href="#">
-          <svg class="networks__icon" width="20" height="14">
+          <svg class="networks__icon" width="24" height="24">
             <use href="img/sprite.svg#icon-youtube"></use>
           </svg>
         </a>
       </li>
     </ul>
-    <div class="main-footer__copyright copyright">
-      <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="copyright__icon" width="27" height="35">
-          <use href="#href="img/sprite.svg#icon-copyright"></use>
-        </svg>
-      </a>
-    </div>
+    <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="copyright__text">Разработано</span>
+      <svg class="copyright__icon" width="27" height="35">
+        <use href="img/sprite.svg#icon-copyright"></use>
+      </svg>
+    </a>
   </footer>
-  <section class="modal modal--success">
+
+  <!-- Открытие модального окна классом modal--open, открытие сообщения об успешной отправке modal--success, открытие сообщения об ошибке modal--failure-->
+  <section class="modal">
     <div class="modal__message modal__message--failure">
-      <h2 class="modal__title">Что-то пошло не так</h2>
-      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="modal__wrapper-text">
+        <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
       <div class="modal__button-container">
         <button class="modal__button button" type="button">Ок</button>
       </div>
     </div>
 
     <div class="modal__message modal__message--success">
-      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его
-        на сайте</p>
+      <div class="modal__wrapper-text">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его
+          на сайте</p>
+      </div>
       <div class="modal__button-container modal__button-container--success">
         <button class="modal__button button" type="button">Закрыть окно</button>
       </div>

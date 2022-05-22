@@ -2,33 +2,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .copyright__text {
   margin-right: 12px;
-  font-size: 14px;
-  line-height: 21px;
 
   @media (min-width: $tablet-width) {
     margin: 0 12px 0 0;
   }
 }
 
-.copyright__link {
-  display: block;
-  width: 27px;
-  height: 34px;
+.copyright:hover {
+  color: #81b3d2;
 }
 
-.copyright__link svg {
+.copyright svg {
   fill: #000000;
 }
 
-.copyright__link:hover svg {
+.copyright:hover svg {
   fill: #81b3d2;
 }
 
-// Тут я уточню, судя по стайлгайду и текст и логотип - это ссылка, но по ТЗ ссылкой является логотип. Обычно взаимодействия не делают на текст, а только на интерактивные элементы
-.copyright__text:hover {
-  color: #81b3d2;
+.copyright:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.copyright:active svg {
+  fill: #000000;
 }
