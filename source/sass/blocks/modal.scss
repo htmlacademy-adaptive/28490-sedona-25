@@ -35,13 +35,11 @@
 
 .modal--failure .modal__message--failure {
   position: absolute;
-  top: 216px;
 
   display: block;
 
   @media (min-width: $tablet-width) {
     width: 400px;
-    top: 650px;
   }
 }
 

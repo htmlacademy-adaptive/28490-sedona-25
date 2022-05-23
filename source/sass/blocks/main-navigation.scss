@@ -1,9 +1,9 @@
 .main-navigation__toggle {
   position: absolute;
+  display: block;
   top: 17px;
   right: 20px;
   z-index: 10;
-  display: none;
   width: 23px;
   height: 22px;
 
@@ -19,20 +19,17 @@
 }
 
 .main-navigation__container {
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 5;
-  display: block;
   background-color: #81b3d2;
 
   @media (min-width: $tablet-width) {
     position: static;
-
     display: grid;
     justify-content: space-between;
-
     background-color: #ffffff;
 
     gap: 156px;
@@ -46,7 +43,6 @@
 
 .no-js .main-navigation__container {
   position: relative;
-
   display: block;
 }
 
@@ -95,9 +91,21 @@
   text-align: center;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
   @media (min-width: $tablet-width) {
     width: 153px;
     box-shadow: none;
+
+    &:hover {
+      background-color: #ffffff;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -115,10 +123,23 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 21px;
     color: #000000;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
   }
 }
 
