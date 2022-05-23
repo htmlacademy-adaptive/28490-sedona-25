@@ -1,0 +1,138 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+
+  display: none;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal--open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__message {
+  display: none;
+  width: 320px;
+
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+  }
+}
+
+.modal--success .modal__message--success {
+  display: block;
+}
+
+.modal--failure .modal__message--failure {
+  position: absolute;
+
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
+}
+
+.modal__wrapper-text {
+  padding: 25px 42px 51px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 70px 52px;
+  }
+}
+
+.modal__message--failure .modal__wrapper-text {
+  padding-top: 30px;
+  padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 60px 3px;
+  }
+}
+
+.modal__title {
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+
+    font-size: 30px;
+  }
+}
+
+.modal--failure .modal__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+
+    line-height: 40px;
+  }
+}
+
+.modal__text {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+.modal__button-container {
+  padding: 20px;
+
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px;
+  }
+}
+
+.modal__message--failure .modal__button-container {
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 49px;
+  }
+}
+
+.modal__button {
+  width: 280px;
+
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+
+    font-size: 21px;
+  }
+}
+
+.modal__message--failure .modal__button {
+  width: 180px;
+
+  @media (min-width: $tablet-width) {
+    width: 272px;
+  }
+}

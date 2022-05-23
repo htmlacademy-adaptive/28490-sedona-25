@@ -1,0 +1,45 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.copyright__text {
+  margin-right: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 12px 0 0;
+  }
+}
+
+.copyright:hover {
+  color: #81b3d2;
+}
+
+.copyright svg {
+  fill: #000000;
+}
+
+.copyright:hover svg {
+  fill: #81b3d2;
+}
+
+.copyright:active {
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.copyright:active svg {
+  fill: #000000;
+}
