@@ -11,7 +11,9 @@
 .form__wrapper-fieldset {
   @media (min-width: $tablet-width) {
     position: relative;
+
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -22,7 +24,9 @@
       top: 18px;
       bottom: 0;
       left: 50%;
+
       width: 1px;
+
       background-color: #dbdbdb;
       transform: translateX(-50%);
     }
@@ -45,6 +49,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-bottom: 28px;
+
     font-size: 21px;
   }
 }
@@ -57,13 +62,16 @@
 
 .form__fieldset {
   position: relative;
+
   margin: 0;
   padding: 24px 20px 21px;
+
   border: none;
   border-bottom: 1px solid #d6d6d6;
 
   @media (min-width: $tablet-width) {
     padding: 45px 0 0;
+
     border: none;
   }
 }
@@ -140,9 +148,11 @@
     background-color: #e5e5e5;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background: #ffffff;
     border: 4px solid #e5e5e5;
+    outline: none;
   }
 }
 
@@ -359,7 +369,6 @@
 
 .form__note {
   display: block;
-  // font-weight: 400;
 
   font-size: 12px;
   line-height: 21px;
@@ -369,6 +378,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
+    color: #333333;
   }
 }
 

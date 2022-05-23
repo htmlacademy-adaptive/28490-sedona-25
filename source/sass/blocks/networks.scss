@@ -37,6 +37,12 @@
   fill: rgb(255, 255, 255, 0.3);
 }
 
+.networks__link:active svg {
+  opacity: 0.3;
+
+  background-color: #5496bd;
+}
+
 .networks__item:not(:last-child) {
   margin-right: 6px;
 }

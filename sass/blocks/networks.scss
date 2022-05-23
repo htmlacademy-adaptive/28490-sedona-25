@@ -1,0 +1,47 @@
+.networks {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 33px;
+  padding-left: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-left: -8px;
+    padding-left: 0;
+  }
+}
+
+.networks__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+
+  background-color: #81b3d2;
+}
+
+.networks__link:hover {
+  background-color: #669ec0;
+}
+
+.networks__link:focus {
+  background-color: #5496bd;
+}
+
+.networks__link svg {
+  fill: #ffffff;
+}
+
+.networks__link:focus svg {
+  fill: rgb(255, 255, 255, 0.3);
+}
+
+.networks__link:active svg {
+  background-color: #5496bd;
+  opacity: 0.3;
+}
+
+.networks__item:not(:last-child) {
+  margin-right: 6px;
+}

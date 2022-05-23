@@ -9,7 +9,6 @@
 .advantages__wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -32,7 +31,6 @@
   }
 }
 
-// Пиши медиа запросы внутри класса
 .advantages__list {
   @media (min-width: $tablet-width) {
     display: grid;
@@ -66,9 +64,7 @@
   top: 0;
   right: 0;
   left: 0;
-
   height: 37px;
-
   background-image: url("../img/advantages-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
