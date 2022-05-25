@@ -40,9 +40,7 @@
   right: 0;
   left: 0;
   z-index: 5;
-
   display: none;
-
   background-color: #81b3d2;
 
   @media (min-width: $tablet-width) {
@@ -68,9 +66,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-
   height: 7px;
-
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0) 0%,
