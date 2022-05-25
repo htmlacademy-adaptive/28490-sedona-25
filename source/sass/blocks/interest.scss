@@ -1,5 +1,6 @@
 .interest {
   padding: 20px 18px 48px;
+
   text-align: center;
   text-transform: uppercase;
 
@@ -19,12 +20,14 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
+
     font-size: 30px;
   }
 }
 
 .interest__description {
   margin-bottom: 31px;
+
   font-size: 14px;
   line-height: 21px;
   color: #333333;

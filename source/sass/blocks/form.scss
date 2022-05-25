@@ -60,6 +60,12 @@
   }
 }
 
+.form__wrapper-fieldset .form__fieldset {
+  @media (min-width: $tablet-width) {
+    padding-top: 39px;
+  }
+}
+
 .form__fieldset {
   position: relative;
 
@@ -73,12 +79,6 @@
     padding: 45px 0 0;
 
     border: none;
-  }
-}
-
-.form__wrapper-fieldset .form__fieldset {
-  @media (min-width: $tablet-width) {
-    padding: 18px 0 0;
   }
 }
 
@@ -120,6 +120,7 @@
 
 .form__contact-label {
   padding-left: 16px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -136,6 +137,7 @@
   font-size: 18px;
   line-height: 26px;
   font-family: $font;
+  color: #000000;
 
   background-color: #f2f2f2;
   border: 4px solid transparent;
@@ -158,6 +160,10 @@
 
 .form__input-wrapper {
   position: relative;
+}
+
+.form__input-wrapper .form__contact-input {
+  padding-right: 60px;
 }
 
 .form__input-wrapper::after {
@@ -259,22 +265,34 @@
   border-radius: 4px;
 }
 
+.form__options-label:hover::before {
+  background-color: #e5e5e5;
+  outline: none;
+}
+
+.form__options-label:active::before {
+  background-color: #d5d5d5;
+}
+
 .form__options-label--radio::before {
   border-radius: 50%;
 }
 
-.form__options-input:checked + .form__options-label--radio::after {
+.form__options-label::after {
   content: "";
   position: absolute;
   top: 50%;
   left: 15px;
 
+  transform: translateY(-50%);
+}
+
+.form__options-input:checked + .form__options-label--radio::after {
   width: 16px;
   height: 16px;
 
   background-color: #333333;
   border-radius: 50%;
-  transform: translateY(-50%);
 }
 
 .form__fieldset--attractions {
@@ -285,11 +303,28 @@
   }
 }
 
-.form__options-input:checked + .form__options-label--check::before {
+.form__options-label--check::after {
+  display: none;
+  width: 22px;
+  height: 16px;
+}
+
+.form__options-input:checked + .form__options-label--check::after {
+  display: block;
+
   background-image: url("../img/checked-checkbox.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 22px 16px;
+  background-size: cover;
+}
+
+.form__options-input:focus + .form__options-label::before {
+  background-color: #e5e5e5;
+  outline: none;
+}
+
+.form__options-input:active + .form__options-label::after {
+  opacity: 0.3;
 }
 
 .form__fieldset--recall {
@@ -306,15 +341,16 @@
 .form__fieldset--recall textarea {
   width: 100%;
   height: 150px;
-  padding: 18px 16px;
+  padding: 12px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   font-family: $font;
+  color: #000000;
 
   background: #f2f2f2;
-  border: none;
+  border: 4px solid transparent;
 
   resize: none;
 
@@ -331,6 +367,17 @@
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    background: #ffffff;
+    border: 4px solid #e5e5e5;
+    outline: none;
   }
 }
 

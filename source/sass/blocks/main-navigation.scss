@@ -1,9 +1,25 @@
+.main-navigation {
+  position: relative;
+}
+
+.main-navigation__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 185px;
+  height: 96px;
+
+  transform: translateX(-50%);
+}
+
 .main-navigation__toggle {
   position: absolute;
-  display: block;
   top: 17px;
   right: 20px;
   z-index: 10;
+
+  display: block;
   width: 23px;
   height: 22px;
 
@@ -18,22 +34,22 @@
   }
 }
 
-.main-navigation__container {
+.main-navigation__list {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 5;
+
+  display: none;
+
   background-color: #81b3d2;
 
   @media (min-width: $tablet-width) {
     position: static;
     display: grid;
-    justify-content: space-between;
+    grid-template-columns: repeat(4, auto);
     background-color: #ffffff;
-
-    gap: 156px;
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -41,12 +57,12 @@
   display: none;
 }
 
-.no-js .main-navigation__container {
+.no-js .main-navigation__list {
   position: relative;
   display: block;
 }
 
-.main-navigation__container::after {
+.main-navigation__list::after {
   content: "";
   position: absolute;
   right: 0;
@@ -66,7 +82,7 @@
   }
 }
 
-.main-navigation--open .main-navigation__container {
+.main-navigation--open .main-navigation__list {
   display: block;
 }
 
@@ -74,21 +90,11 @@
   background-image: url("../img/icon-cross.svg");
 }
 
-.main-navigation__list {
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
-
-  &:last-child {
-    @media (min-width: $tablet-width) {
-      margin-left: auto;
-    }
-  }
-}
-
 .main-navigation__item {
   padding: 17px 17px 13px;
+
   text-align: center;
+
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   &:hover {
@@ -101,6 +107,7 @@
 
   @media (min-width: $tablet-width) {
     width: 153px;
+
     box-shadow: none;
 
     &:hover {
@@ -113,8 +120,21 @@
   }
 }
 
+.main-navigation__item:nth-child(4n-2) {
+  @media (min-width: 768px) {
+    margin-right: 76px;
+  }
+}
+
+.main-navigation__item:nth-child(4n-1) {
+  @media (min-width: 768px) {
+    margin-left: 76px;
+  }
+}
+
 .main-navigation__item a {
   display: inline-block;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -138,6 +158,7 @@
 
     &:active {
       color: #000000;
+
       opacity: 0.3;
     }
   }

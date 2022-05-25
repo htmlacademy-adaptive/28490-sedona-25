@@ -1,5 +1,5 @@
 .main-footer {
-  padding: 35px 20px 15px;
+  padding: 39px 20px 22px;
 
   text-align: center;
   text-transform: uppercase;
@@ -8,11 +8,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 33px 60px 34px;
+    padding: 37px 60px 34px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 30px 120px 34px;
+    padding: 35px 120px 34px;
   }
 }
 
@@ -23,6 +23,7 @@
 .main-footer__tag {
   display: inline-block;
   margin-bottom: 34px;
+
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -31,6 +32,16 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #000000;
+
+    opacity: 0.3;
   }
 }
 

@@ -38,9 +38,8 @@
 }
 
 .networks__link:active svg {
-  opacity: 0.3;
-
   background-color: #5496bd;
+  opacity: 0.3;
 }
 
 .networks__item:not(:last-child) {
