@@ -3,10 +3,15 @@
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+
   font-size: 14px;
   line-height: 21px;
   color: #000000;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .copyright__text {
@@ -31,6 +36,7 @@
 
 .copyright:active {
   color: #000000;
+
   opacity: 0.3;
 }
 

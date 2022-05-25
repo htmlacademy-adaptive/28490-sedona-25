@@ -11,6 +11,7 @@
 .catalog__list {
   @media (min-width: $tablet-width) {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -21,6 +22,7 @@
 
 .catalog__item {
   padding: 24px 20px 23px;
+
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
@@ -37,7 +39,6 @@
     }
   }
 }
-
 
 .catalog__img {
   height: 280px;
@@ -104,6 +105,7 @@
 
 .catalog__title {
   margin-bottom: 0;
+
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -115,6 +117,7 @@
 
 .catalog__author {
   margin: 0;
+
   font-size: 14px;
   line-height: 21px;
   color: #333333;
@@ -142,6 +145,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 6px;
+
     gap: 9px;
   }
 

@@ -13,12 +13,11 @@
 
 <body class="no-js">
   <header class="header">
-    <a class="header__logo">
-      <img src="img/logo.svg" alt="Logo" width="185" height="96">
-    </a>
     <nav class="main-navigation">
+      <a class="main-navigation__logo">
+        <img src="img/logo.svg" alt="Logo" width="185" height="96">
+      </a>
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-navigation__container">
         <ul class="main-navigation__list list-reset">
           <li class="main-navigation__item main-navigation__item--current">
             <a>Главная</a>
@@ -26,8 +25,6 @@
           <li class="main-navigation__item">
             <a href="catalog.html">Фото и видео</a>
           </li>
-        </ul>
-        <ul class="main-navigation__list list-reset">
           <li class="main-navigation__item">
             <a href="form.html">Форма отзыва</a>
           </li>
@@ -35,7 +32,6 @@
             <a href="https://htmlacademy.ru">HTML academy</a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
   <main class="main-container">
@@ -139,6 +135,12 @@
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1670613.0995675384!2d-111.94931372968749!3d35.13376445878344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sru!4v1649701693365!5m2!1sen!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map__img">
+        <picture>
+          <source type="image/webp" srcset="img/map.jpg 1x, img/map@2x.webp 2x">
+          <img src="img/map.jpg" srcset="img/map@2x.jpg 2x" width="320" height="260" alt="Карта">
+        </picture>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -146,6 +148,7 @@
     <ul class="main-footer__networks networks list-reset">
       <li class="networks__item">
         <a class="networks__link" href="#">
+          <span class="visually-hidden">Мы в контакте</span>
           <svg class="networks__icon" width="24" height="24">
             <use href="img/sprite.svg#icon-vk"></use>
           </svg>
@@ -153,6 +156,7 @@
       </li>
       <li class="networks__item">
         <a class="networks__link" href="#">
+          <span class="visually-hidden">Мы в Telegram</span>
           <svg class="networks__icon" width="24" height="24">
             <use href="img/sprite.svg#icon-telegram"></use>
           </svg>
@@ -160,6 +164,7 @@
       </li>
       <li class="networks__item">
         <a class="networks__link networks__link--youtube" href="#">
+          <span class="visually-hidden">Мы в Youtube</span>
           <svg class="networks__icon" width="24" height="24">
             <use href="img/sprite.svg#icon-youtube"></use>
           </svg>
